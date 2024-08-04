@@ -1,0 +1,34 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(181, 238, 134);
+    /* font-family: ; */
+}
+.container{
+    margin: auto;
+    width: 80%;
+    margin-top: 5em;
+    /* margin-left: 39em; */
+    padding: 2em;
+    min-width: 320px;
+}
+
+.input{
+    width: 8%;
+    border-radius: 8px;
+    border: 1px solid black;
+    line-height: 2;
+    padding: 5px;
+    background-color: beige;
+    transition: all .3s;
+}
+.input:focus{
+    width: 30%;
+}
+.input::placeholder{
+    font-weight: 200;
+    color: rgb(100, 138, 156);
+}
+.input:focus::placeholder{
+    color: transparent;
+}

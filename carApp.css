@@ -1,0 +1,11 @@
+ul li {
+    cursor: pointer;
+    color: purple;
+}
+button{
+    border-radius:5px ;
+    border-width: .8px;
+    border-style: double;
+    border-color: purple;
+    margin-left: 3em;
+}

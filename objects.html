@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+
+    <script>
+        // let us group multiple values together
+        const product = {//multiple values together 
+            name:'socks', // called property, we can access specific values in the object
+            price:1090, // property-value-pair
+            rating:{
+                stars:4.5,
+                count:87
+            },
+            'delivery-time':'1 day',
+            fun: function function1(name='abdelrahman'){ //  function inside object called Method
+                console.log('function inside object');
+                console.log('my name to test the write in the parameter : '+name);
+            }
+        };
+        console.log(product);
+        console.log(product.name);//access the property
+        console.log(product.price);
+        product.name = 'cotton socks'; //  change the value of property
+        product.newProperty = true;// add a new property
+        console.log(product['rating']);
+        delete product.newProperty;//delete the property
+        product.fun();
+
+        //------------------------------------------------------------
+        // json object in js , used to store data to send it between computers 
+        console.log(JSON.stringify(product));//convert the object into JSON object as string
+        // stringify is method in JSON object
+        console.log(JSON.parse(JSON.stringify(product)));
+        // parse is method in JSON turn the string into object
+
+        //-------------------------------------------------------------------------
+
+        // LocalStorage object
+//test creating a get method in js
+        const test= {
+            name:'Abdelrahman',
+            age:19,
+            getName: function name(){
+                return this.name;
+            }
+        };
+        console.log('to test the method that i made in the object :\t'+test.getName());
+
+        localStorage.setItem('message','hello');
+        console.log(localStorage.getItem('message'));
+
+    </script>
+</body>
+</html>

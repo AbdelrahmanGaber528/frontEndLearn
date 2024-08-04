@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Css.css">
+    <title>Cart Simple Version</title>
+</head>
+<body>
+
+    <h2>Cart Quantity</h2>
+    <button onclick="
+        console.log(`Cart Quantity : ${CartQuantity}`);
+    ">show Quantity</button>
+    <button onclick="
+        CartQuantity++;
+    ">Add to Cart</button>
+    <button onclick="
+    CartQuantity+=2;
+    ">+2</button>
+    <button onclick="
+    CartQuantity+=3;
+    ">+3</button>
+    <button onclick="
+    CartQuantity =0;
+    ">Reset the Cart</button>
+    
+
+    
+    <script>
+        let CartQuantity = 0;
+    </script>
+</body>
+</html>
