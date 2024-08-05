@@ -42,10 +42,6 @@ function computerTurn(playerMove){
             }
     updateResult();
     updateElements();
-    /**  You 
-        <img src="photos/rock-emoji.png" alt="" class="move-icon">
-        <img src="photos/paper-emoji.png" alt="" class="move-icon">
-        Computer */
     function updateMoves(){
         document.querySelector('.js-moves').innerHTML=`  You 
         <img src="photos/${playerMove}-emoji.png" alt="" class="move-icon">
