@@ -1,9 +1,14 @@
 const subscribe_button = document.querySelector('.js-subscribe-button');
 subscribe_button.addEventListener('click', function Subscribe(){
-        if(subscribe_button.innerText==='Subscribe')
+        if(subscribe_button.innerText==='Subscribe'){
             subscribe_button.innerText='Subscribed';
-        else
+            subscribe_button.classList.add('is-subscribed');
+            // classList add a class to the tag 
+        }
+        else{
             subscribe_button.innerText='Subscribe';
+            subscribe_button.classList.remove('is-subscribed');
+        }
 });
 
 const totalCost = document.querySelector('.js-total-cost');

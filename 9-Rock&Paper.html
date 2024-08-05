@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css.css">
     <title>Rock</title>
 </head>
-<body>
-    <h3>Rock Paper Scissors</h3>
-    <button id="Rock" onclick="
-    computerTurn('Rock');
-    ">Rock</button>  <button id="Paper" onclick="
-    computerTurn('Paper');
-    ">Paper</button>  <button id="Scissors" onclick="
-    computerTurn('Scissors');
-    ">Scissors</button>
-    <button id="reset" onclick="
-        score.wins=0;score.loses=0;score.ties=0;
-        localStorage.removeItem('score');
-        updateElements();
-    ">Reset Game</button>
+<body class="rock-body">
+    <h3 class="title">Rock Paper Scissors</h3>
+    <button id="rock" class="move-button" onclick="computerTurn('rock');"><img src="photos/rock-emoji.png" class="move-icon"></button> 
+    
+    <button id="paper" class="move-button" onclick="computerTurn('paper');"><img src="photos/paper-emoji.png" class="move-icon"></button>
+
+    <button id="scissors" class="move-button" onclick="computerTurn('scissors');"><img src="photos/scissors-emoji.png" class="move-icon"></button> 
     <p class="js-result"></p>
-    <p class="js-moves"></p>
-    <p class="js-score"></p>
+    <p class="js-moves">
+    </p>
+    <p class="js-score score"></p>
+    
+    <button id="reset" onclick="score.wins=0;score.loses=0;score.ties=0;
+        localStorage.removeItem('score');
+        updateElements();" class="reset-button">Reset Game</button>
+
     
 
     <script src="Paper&Rock.js">
