@@ -45,9 +45,9 @@ inputDom.onkeydown = function(){
     console.log('test');
 };
 
-window.onload = function(){//when the pege loaded 
-    alert("Yes Loaded");
-};
+// window.onload = function(){//when the pege loaded 
+//     alert("Yes Loaded");
+// };
 // write the function alone and use it
 function keyboardUp(){
     console.log('test');
@@ -60,9 +60,3 @@ inputDom.addEventListener('click',function count(){
     var count=0;
     count++;
 });
-
-//loops in js
-var i =0;
-for(;i<10;i++){
-    console.log(i);
-};
