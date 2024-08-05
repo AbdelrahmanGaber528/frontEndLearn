@@ -16,7 +16,7 @@ function calcCost(){
         cost+=10    ;
     totalCost.innerHTML = `The total cost : $${cost}`;
 }
-function Enter(){
+function Enter(event){
     if(event.key==='Enter')
     calcCost();
 }
