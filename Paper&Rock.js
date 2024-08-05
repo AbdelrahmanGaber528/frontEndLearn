@@ -4,7 +4,7 @@ let result = null;
 const score = JSON.parse(localStorage.getItem('score')) || 
     {
         wins:0,
-        losses:0,
+        loses:0,
         ties:0
     };
 //        /\
